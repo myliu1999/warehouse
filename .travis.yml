@@ -14,4 +14,4 @@ script:
 after_success:
   - docker build -t louisliu/test2:latest ./test
   - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD"
-  - docker push louisliu/test:latest
+  - docker push louisliu/test2:latest
