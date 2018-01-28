@@ -12,5 +12,6 @@ script:
   - echo "no test"
 
 after_success:
-  - docker build -t louisliu/test:latest ./test
-
+  - docker build -t louisliu/test2:latest ./test
+  - docker login -u "$DOCKER_ID" -p "$DOCKER_PASSWORD"
+  - docker push louisliu/test:latest
