@@ -1,0 +1,9 @@
+git
+yasm
+pkg-config
+wget
+mercurial
+dh-autoreconf
+cmake
+cmake-curses-gui
+libx264-dev
