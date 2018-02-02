@@ -27,3 +27,7 @@ make install
 make clean
 
 ldconfig
+
+cd ../..
+rm -rf ffmpeg_source
+rm -rf $HOME/ffmpeg_build
