@@ -1,6 +1,14 @@
 mkdir ffmpeg_source
 cd ffmpeg_source
 
+wget http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.gz
+tar xzvf nasm-2.13.01.tar.gz 
+cd nasm-2.13.01
+./configure --prefix=/usr
+make
+make install
+cd ..
+
 git clone --depth 1 git://github.com/mstorsjo/fdk-aac.git
 cd fdk-aac/
 autoreconf -fiv
