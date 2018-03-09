@@ -1,6 +1,12 @@
 mkdir ffmpeg_source
 cd ffmpeg_source
 
+git clone https://github.com/axiomatic-systems/Bento4
+cd Bento4
+scons -u build_config=Release
+cp -r ./Build/Targets/x86_64-unknown-linux/Release/* /usr/local/bin
+cd ..
+
 wget http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.gz
 tar xzvf nasm-2.13.01.tar.gz 
 cd nasm-2.13.01

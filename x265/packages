@@ -7,3 +7,4 @@ dh-autoreconf
 cmake
 cmake-curses-gui
 libx264-dev
+scons
