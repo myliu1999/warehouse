@@ -5,6 +5,8 @@ git clone https://github.com/axiomatic-systems/Bento4
 cd Bento4
 scons -u build_config=Release
 cp -r ./Build/Targets/x86_64-unknown-linux/Release/* /usr/local/bin
+mkdir /usr/local/bin/bento4-python/
+cp -r ./Source/Python/* /usr/local/bin/bento4-python
 cd ..
 
 wget http://www.nasm.us/pub/nasm/releasebuilds/2.13.01/nasm-2.13.01.tar.gz
